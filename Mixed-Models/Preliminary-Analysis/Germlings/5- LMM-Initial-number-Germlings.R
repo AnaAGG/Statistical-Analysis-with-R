@@ -1,7 +1,7 @@
-#Análisis preliminares longitud inicial de reclutas.
+# CHECK IF THE INITIAL LENGHT OF GERMLINGS DEPENDS ON THE POPULATION. 
+# If yes, we have need to take this into account when interpreting the results
 
-
-library(car)        ## para obtener VIF's y usar Anova, bootCase, y transformación Box-Cox
+library(car)        ## para obtener VIF's y usar Anova, bootCase, y transformaciï¿½n Box-Cox
 library(MASS)       ## para usar dropterm y rlm
 library(MuMIn)      ## para calcular AICc
 library(lmtest)     ## para usar coeftest y correcciones por heterocedasticidad
@@ -13,7 +13,7 @@ library(psych)      ## para construir tablas con describe
 library(DAAG)       ## para hacer validaciones cruzadas del modelo usando cv.lm
 library(robust)     ## para hacer estimas robustas usando rlm
 library(robustbase) ## para hacer estimas robustas usando lmrob
-library(phia)       ## para tests a posteriori y análisis de interacciones
+library(phia)       ## para tests a posteriori y anï¿½lisis de interacciones
 library(lme4)     ## generalized mixed models
 library(lmerTest) ## para MS, df, p ... usando type 3/type 1 hypotheses with "Satterthwaite" and "Kenward-Roger"
 library(pbkrtest) ## necesario para lmerTest
@@ -50,7 +50,7 @@ m2 <- lmer(Initial ~ Population * Emersion  + (Population|Tank), control=mi.cont
 
 AICc(m0, m1, m2)
 
-#Exploración de la normalidad (residuos)
+#Exploraciï¿½n de la normalidad (residuos)
 hist(residuals(m2), density=5, freq=FALSE, main="residuos del modelo", ylim=c(0,0.004))
 curve(dnorm(x, mean=mean(residuals(m2)), sd=sd(residuals(m1))), col="red", lwd=2, add=TRUE, yaxt="n")
 qqnorm(residuals(m2), main="residuos del modelo")
@@ -75,7 +75,7 @@ shapiro.test(residuals(m5))
 
 m6 <- lmer (log(Initial) ~ Population * Emersion + (Population|Tank), control=mi.control, data=Lenght2)
 
-#Exploración de la normalidad (residuos)
+#Exploraciï¿½n de la normalidad (residuos)
 hist(residuals(m6), density=5, freq=FALSE, main="residuos del modelo", ylim=c(0,0.004))
 curve(dnorm(x, mean=mean(residuals(m6)), sd=sd(residuals(m2))), col="red", lwd=2, add=TRUE, yaxt="n")
 qqnorm(residuals(m6), main="residuos del modelo")
@@ -83,8 +83,8 @@ qqline(residuals(m6), col="red", lwd=2)
 shapiro.test(residuals(m6))#No se ha corregido del todo, pero lo dejamos asi, esta cerca de 0.05
 
 
-#Exploración de la heterocedasticidad (residuos)
-plot(fitted(m6), residuals(m6), main="¿HAY HETEROCEDASTICIDAD?")#con los mixtos no hay las correcciones que hay en los generales/generalizados.
+#Exploraciï¿½n de la heterocedasticidad (residuos)
+plot(fitted(m6), residuals(m6), main="ï¿½HAY HETEROCEDASTICIDAD?")#con los mixtos no hay las correcciones que hay en los generales/generalizados.
 abline(h=0, col="red")
 leveneTest(residuals(m6) ~ Population * Emersion, data=Lenght2)#Homogeneidad de varianzas OK.
 
