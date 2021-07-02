@@ -1,31 +1,30 @@
 # CHECK IF THE INITIAL LENGHT OF GERMLINGS DEPENDS ON THE POPULATION. 
 # If yes, we have need to take this into account when interpreting the results
 
-library(car)        ## para obtener VIF's y usar Anova, bootCase, y transformaci�n Box-Cox
-library(MASS)       ## para usar dropterm y rlm
-library(MuMIn)      ## para calcular AICc
-library(lmtest)     ## para usar coeftest y correcciones por heterocedasticidad
-library(sandwich)   ## para correcciones de heterocedasticidad usando vcovHC
-library(heplots)    ## para la estima de los valores de partial eta2
-library(moments)    ## para obtener el sesgo, kurtosis y sus significaciones: kurtosis, anscombe.test, skewness, agostino.test
-library(fit.models) ## para usar el comando leverage
-library(psych)      ## para construir tablas con describe
-library(DAAG)       ## para hacer validaciones cruzadas del modelo usando cv.lm
-library(robust)     ## para hacer estimas robustas usando rlm
-library(robustbase) ## para hacer estimas robustas usando lmrob
-library(phia)       ## para tests a posteriori y an�lisis de interacciones
+# load libraries
+library(car)        ## to get VIF's, use ANOVA, bootCase and Box-Cox transformation  
+library(MASS)       ## to use  dropterm and rlm
+library(MuMIn)      ## to calculate AICc
+library(zoo)
+library(lmtest)     ## To use `coeftest`and heterocedasticity corrections 
+library(sandwich)   ## to correct heterocedasticity problem using vcovHC
+library(heplots)    ## to calculate the eta2 partial values 
+library(moments)    ## to get the skewness, kurtosis and its significances: kurtosis, anscombe.test, skewness, agostino.test
+library(fit.models) ## to use leverage
+library(psych)      ## to create descibe tables
+library(phia) ## para tests a posteriori y an�lisis de interacciones
+library(Matrix)
 library(lme4)     ## generalized mixed models
-library(lmerTest) ## para MS, df, p ... usando type 3/type 1 hypotheses with "Satterthwaite" and "Kenward-Roger"
-library(pbkrtest) ## necesario para lmerTest
-library(car)      ## para Anova(modelo, type=3) para equivalente a suma de tipo III; para boxCox(modelo, lambda=seq(-2,2, 1/100))
+library(lmerTest) ## to MS, df, p ... usando type 3/type 1 hypotheses with "Satterthwaite" and "Kenward-Roger"
+library(pbkrtest) ## needed for lmerTest
+library(car)      ## to Anova(model, type=3)  equivalent to sum tyope III; to boxCox(model, lambda=seq(-2,2, 1/100))
 library(MuMIn)    ## para AICc
 library(lmtest)   ## para lrtest
-library(psych)    ## para tabla de promedios con describe y describeBy
-library(arm)      ## para correr simulaciones con modelos lm, glm, polr o merMod
-library(phia)     ## para plots de interacciones
-library(lattice)  ## para plots de residuos
-library(LMERConvenienceFunctions) ## para tests post hoc
-library(blmeco) 
+library(phia)     ## to plots with interactions
+library(lattice)  ## plot residuals
+library(LMERConvenienceFunctions) ## to tests post hoc
+library(blmeco)
+library(nlme)
 
 
 Lenght<- read.table("clipboard", header=TRUE, sep = "\t")
