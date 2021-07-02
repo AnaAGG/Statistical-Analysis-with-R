@@ -13,7 +13,7 @@ library(ggplot2)
 
 # --------------------- # --------------------- # --------------------- # --------------------- # --------------------- # --------------------- #
 # --------------------- # --------------------- # --------------------- # --------------------- # --------------------- # --------------------- #
-# WWITHOUT CONSIDERING TREATMENTS AND POPULATIONS
+# WITHOUT CONSIDERING TREATMENTS AND POPULATIONS
 
 # Load the data
 qtden <- read.table ("clipboard", header = TRUE, sep = "\t")
