@@ -1,4 +1,9 @@
-## Quantile regression ##  https://data.library.virginia.edu/getting-started-with-quantile-regression/
+## QUANTILE REGRESSION
+## https://data.library.virginia.edu/getting-started-with-quantile-regression/
+
+# THE OBJETIVE OF THIS CODE IS TO TEST IF THERE ARE ANY DIFFERENCE BETWEEN TREATMENT BEFORE START THE EXPERIMENT TO 
+# SO THAT WHEN ANALYSING THE DATA WE CAN TAKE INTO ACCOUNT INITIAL DIFFERENCES TO TAKE CONCLUSIONS
+
 
 # Load required libraries
 library(SparseM)
@@ -6,7 +11,9 @@ library(quantreg)
 library(rlang)
 library(ggplot2)
 
-#Sin considerar poblaciones ni trtamientos. 
+# --------------------- # --------------------- # --------------------- # --------------------- # --------------------- # --------------------- #
+# --------------------- # --------------------- # --------------------- # --------------------- # --------------------- # --------------------- #
+# WWITHOUT CONSIDERING TREATMENTS AND POPULATIONS
 
 # Load the data
 qtden <- read.table ("clipboard", header = TRUE, sep = "\t")
