@@ -1,4 +1,4 @@
-# Mixed Models (Linear Mixed Models and Generalized Linear Mixed Model)
+# Statistical Analysis using R
 
 In this repo I examined how early developmental stages of different populations of a macroalgae responded to the combined effects of environmental stressors, including salinity and aerial and seawater temperature. 
 

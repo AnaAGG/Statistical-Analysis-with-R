@@ -10,4 +10,5 @@ N = sample size
 # Normality
 # Heterocedasticity
 # post-hoc
+# dispersion
 
