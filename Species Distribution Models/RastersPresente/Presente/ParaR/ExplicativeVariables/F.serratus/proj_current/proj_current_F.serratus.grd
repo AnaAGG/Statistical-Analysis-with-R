@@ -1,0 +1,25 @@
+[general]
+creator=R package 'raster'
+created=2019-03-22 16:17:49
+[georeference]
+nrows=531
+ncols=720
+xmin=-18.216386117
+ymin=27.026795797
+xmax=41.783613883
+ymax=71.276795797
+projection=NA
+[data]
+datatype=FLT4S
+byteorder=little
+nbands=11
+bandorder=BIL
+minvalue=0:0:0:0:0:0:0:0:0:0:0
+maxvalue=929:937:921:914:936:945:902:916:933:935:936
+nodatavalue=-3.4e+38
+[legend]
+legendtype=
+values=
+color=
+[description]
+layername=F.serratus_PA1_RUN1_GLM:F.serratus_PA1_RUN2_GLM:F.serratus_PA1_RUN3_GLM:F.serratus_PA1_RUN4_GLM:F.serratus_PA1_RUN5_GLM:F.serratus_PA1_RUN6_GLM:F.serratus_PA1_RUN7_GLM:F.serratus_PA1_RUN8_GLM:F.serratus_PA1_RUN9_GLM:F.serratus_PA1_RUN10_GLM:F.serratus_PA1_Full_GLM
