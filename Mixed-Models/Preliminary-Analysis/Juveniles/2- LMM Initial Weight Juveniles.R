@@ -13,14 +13,14 @@ library(heplots)    ## to calculate the eta2 partial values
 library(moments)    ## to get the skewness, kurtosis and its significances: kurtosis, anscombe.test, skewness, agostino.test
 library(fit.models) ## to use leverage
 library(psych)      ## to create descibe tables
-library(phia) ## para tests a posteriori y an�lisis de interacciones
+library(phia)       ## to post-hoc analysis
 library(Matrix)
 library(lme4)     ## generalized mixed models
 library(lmerTest) ## to MS, df, p ... usando type 3/type 1 hypotheses with "Satterthwaite" and "Kenward-Roger"
 library(pbkrtest) ## needed for lmerTest
 library(car)      ## to Anova(model, type=3)  equivalent to sum tyope III; to boxCox(model, lambda=seq(-2,2, 1/100))
-library(MuMIn)    ## para AICc
-library(lmtest)   ## para lrtest
+library(MuMIn)    ## to AICc
+library(lmtest)   ## to lrtest
 library(phia)     ## to plots with interactions
 library(lattice)  ## plot residuals
 library(LMERConvenienceFunctions) ## to tests post hoc
