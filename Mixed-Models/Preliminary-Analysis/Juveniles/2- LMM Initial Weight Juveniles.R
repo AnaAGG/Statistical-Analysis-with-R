@@ -50,7 +50,7 @@ m2 <- lme(Initial ~ Population, random = ~ Population|Tank, data=wei, control=mi
 
 anova(m0, m1, m2)
 
-#Reajustamos los p valores
+# re-adjust the p-values
 
 0.5*(1-pchisq(0.055865,1))
 0.5*((1-pchisq(27.674074,1)) + (1-pchisq(27.674074,10)))
