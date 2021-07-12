@@ -109,6 +109,11 @@ METER UNA FOTO DE LA DISTRIBUCION NORMLA
 How we can explore the normality in our residuals?
 - Visually
   - Histogram
+ <p align="center">
+  <img src="https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/normal_disrtibution.jpeg" />
+  </p>
+
+
   - Q-Q plot (normal probability plot)
   <p align="center">
   <img src="https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/QQPlot.png" />
