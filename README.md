@@ -1,6 +1,8 @@
 # Statistical Analysis using R
 
-In this repo I examined how early developmental stages of different populations of a macroalgae responded to the combined effects of environmental stressors, including salinity and aerial and seawater temperature. 
+This repo is the result of a laboratory experiment 
+
+The main objetive was evaluate how early developmental stages of different populations of a macroalgae responded to the combined effects of environmental stressors, including salinity and aerial and seawater temperature. 
 
 Experiment schedule:
 
