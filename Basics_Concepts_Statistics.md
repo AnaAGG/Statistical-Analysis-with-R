@@ -2,9 +2,14 @@
 - [**1. Types of response variable distributions**](#1-types-of-response-variable-distributions)
     - [**1.1 Gaussian or Normal distribution**](#11-gaussian-or-normal-distribution)
     - [**1.2 Poisson distribution**](#12-poisson-distribution)
-    - [**1.3 Continous distribution**](#13-continous-distribution)
+    - [**1.3. Binomial Distribution**](#13-binomial-distribution)
     - [**1.4 Negative Binomial distribution**](#14-negative-binomial-distribution)
-- [2. Types of response variable distributions](#2-types-of-response-variable-distributions)
+- [2. Types predictors](#2-types-predictors)
+    - [**2.1 Continous factors**](#21-continous-factors)
+    - [**2.2 Offsets**](#22-offsets)
+    - [**2.3 Within- and between-groups factors**](#23-within--and-between-groups-factors)
+    - [**2.4 Fixed and random factors**](#24-fixed-and-random-factors)
+    - [**2.5 Nested factors**](#25-nested-factors)
 - [3. Basic n-way ANOVA models](#3-basic-n-way-anova-models)
 - [4. Tables and types of contrasts](#4-tables-and-types-of-contrasts)
 - [5. Check the assumptions for the "good" model](#5-check-the-assumptions-for-the-good-model)
@@ -53,8 +58,8 @@ Key points:
         > $\lambda$ **-->** $\mu$  = $\sigma^2$
 
 ⚠️ Poisson distributions with high $\lambda$ (i.e. far from zero) can resemble a Gaussian
+### **1.3. Binomial Distribution**
 
-### **1.3 Continous distribution**
 ### **1.4 Negative Binomial distribution**
 
 More spread out distributions than a Poisson (variance > mean). Their characteristics are:
@@ -72,12 +77,43 @@ $$
 
 When size is very large `1/size` tend to 0 and the variance ends up looking by $\mu$
 
-# 2. Types of response variable distributions
+Depending on the nature of our response variable, we will owrk with different types of models: 
+|Linear General Models|Linear Generalised Linear Models|
+|:-------:|:-------:|
+|Gaussian Distribution|Poisson Distribution|
+||Binomial Distribution|
+||Negative Binomial Distribution|
+
+⚠️ If the distribution of the response variable is neither Poisson, Negative Binomial or Binomial, but it does not exhibit Gaussian characteristics eirther then:
+
+    TRANSFORM THE RESPONSE VARAIBALE AND APPLY GENERAL LINEAR MODELS
+
+# 2. Types predictors
+
+### **2.1 Continous factors**
+### **2.2 Offsets**
+### **2.3 Within- and between-groups factors**
+### **2.4 Fixed and random factors**
+### **2.5 Nested factors**
+
 # 3. Basic n-way ANOVA models
 # 4. Tables and types of contrasts
 # 5. Check the assumptions for the "good" model
 ### **5.1 Normality (residuals)**
 In statistics, normality tests are used to determine if a data set is well-modeled by a normal distribution and to compute how likely it is for a random variable underlying the data set to be normally distributed.
+
+The residuals of the model should fit a normal distribution. Should look something like this: 
+
+METER UNA FOTO DE LA DISTRIBUCION NORMLA
+
+How we can explore the normality in our residuals?
+- Visually
+  - Histogram
+  - Q-Q plot (normal probability plot)
+  <p align="center">
+  <img src="[http://some_place.com/image.png](https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/QQPlot.png)" />
+  </p>
+
 ### **5.2 Heterocedasticity (residuals)**
 ### **5.3. Influent and lost points**
 ### **5.4. Variance homogeneity**
