@@ -70,6 +70,7 @@ $$
 \mu \ + \mu^2 / size
 $$
 
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
 
 When size is very large `1/size` tend to 0 and the variance ends up looking by $\mu$
