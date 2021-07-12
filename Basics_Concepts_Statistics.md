@@ -66,17 +66,8 @@ More spread out distributions than a Poisson (variance > mean). Their characteri
 
 The variance is defines by: 
 
-$\mu$ + $\mu^2 / size$
-
-<!-- $$
-P(\overline{A} \cap \overline{B}) = 0.3
-$$ --> 
-
-<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=P(%5Coverline%7BA%7D%20%5Ccap%20%5Coverline%7BB%7D)%20%3D%200.3"></div>
-
-
 $$
-P(\mu \cap \overline{B}) = 0.3
+\mu \ + \mu^2 / size
 $$
 
 
