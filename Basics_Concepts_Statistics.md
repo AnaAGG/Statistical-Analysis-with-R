@@ -4,7 +4,7 @@
     - [**1.2 Poisson distribution**](#12-poisson-distribution)
     - [**1.3 Continous distribution**](#13-continous-distribution)
     - [**1.4 Negative Binomial distribution**](#14-negative-binomial-distribution)
-- [2. Types of predictors](#2-types-of-predictors)
+- [2. Types of response variable distributions](#2-types-of-response-variable-distributions)
 - [3. Basic n-way ANOVA models](#3-basic-n-way-anova-models)
 - [4. Tables and types of contrasts](#4-tables-and-types-of-contrasts)
 - [5. Check the assumptions for the "good" model](#5-check-the-assumptions-for-the-good-model)
@@ -70,14 +70,9 @@ $$
 \mu \ + \mu^2 / size
 $$
 
-<img src="https://render.githubusercontent.com/render/math?math=\mu \ + \mu^2 / size">
-
-
 When size is very large `1/size` tend to 0 and the variance ends up looking by $\mu$
-  
-  
 
-# 2. Types of predictors 
+# 2. Types of response variable distributions
 # 3. Basic n-way ANOVA models
 # 4. Tables and types of contrasts
 # 5. Check the assumptions for the "good" model
