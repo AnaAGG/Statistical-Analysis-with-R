@@ -1,46 +1,45 @@
 ## Table of contents 
-- [1. Types of response variable distributions](#1-types-of-response-variable-distributions)
+- [**1. Types of response variable distributions**](#1-types-of-response-variable-distributions)
+    - [**1.1 Gaussian or Normal distribution**](#11-gaussian-or-normal-distribution)
+    - [**1.2 Poisson distribution**](#12-poisson-distribution)
+    - [**1.3 Continous distribution**](#13-continous-distribution)
+    - [**1.4 Negative Binomial distribution**](#14-negative-binomial-distribution)
 - [2. Types of predictors](#2-types-of-predictors)
 - [3. Basic n-way ANOVA models](#3-basic-n-way-anova-models)
 - [4. Tables and types of contrasts](#4-tables-and-types-of-contrasts)
 - [5. Check the assumptions for the "good" model](#5-check-the-assumptions-for-the-good-model)
-  - [5.1. Normality (residuals)](#51-normality-residuals)
-  - [5.2. Heterocedasticity (residuals)](#52-heterocedasticity-residuals)
-  - [5.3. Influent and lost points](#53-influent-and-lost-points)
-  - [5.4. Variance homogeneity](#54-variance-homogeneity)
-  - [5.5. Independence between predictor variables-factors - collinearity](#55-independence-between-predictor-variables-factors---collinearity)
-- [When use AIC or AICc)](#when-use-aic-or-aicc)
-- [Normality](#normality)
-- [Heterocedasticity](#heterocedasticity)
-- [post-hoc](#post-hoc)
+- [6. Other concepts to incorporate (In progress)](#6-other-concepts-to-incorporate-in-progress)
+  - [When use AIC or AICc)](#when-use-aic-or-aicc)
+  - [post-hoc](#post-hoc)
 - [dispersion](#dispersion)
 
 
-# 1. Types of response variable distributions
+# **1. Types of response variable distributions**
 
 In statistic we can find four main distributions: 
 
-1. **Gaussian or Normal distribution**
+### **1.1 Gaussian or Normal distribution**
    
-    ![distribution](https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/normal_disrtibution.jpeg)
+![distribution](https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/normal_disrtibution.jpeg)
 
-    Is a type of continuous probability distribution. Is defined by two statistics: 
+Is a type of continuous probability distribution. Is defined by two statistics: 
 
-      - Mean ($\mu$) =  0
+- Mean ($\mu$) =  0
 
-      - Standard deviation ($\sigma$) = 1. It is a measure how spread out our date are. 
+- Standard deviation ($\sigma$) = 1. It is a measure how spread out our date are. 
   
-    The parameter $\mu$  is the mean of the distribution, while the parameter $\sigma$  is its standard deviation. The variance of the distribution is $\sigma^2$. A random variable with a Gaussian distribution is said to be normally distributed, and is called a normal deviate.
+The parameter $\mu$  is the mean of the distribution, while the parameter $\sigma$  is its standard deviation. The variance of the distribution is $\sigma^2$. A random variable with a Gaussian distribution is said to be normally distributed, and is called a normal deviate.
   
-    Key points:
-    - A normal distribution is the proper term for a probability bell curve.
+Key points:
+- A normal distribution is the proper term for a probability bell curve.
 
-    - Normal distributions are symmetrical, but not all symmetrical distributions are normal.
+- Normal distributions are symmetrical, but not all symmetrical distributions are normal.
 
-    - In normal distribution:
+- In normal distribution:
   
-        > $\mu$  = median = mode
-1. **Continous distribution**
+    > $\mu$  = median = mode
+    
+### **1.2 Poisson distribution**
    This distriburtion has the following characteristics:
    - Created by integers (usually counts)
    - It can not have negative values
@@ -48,8 +47,8 @@ In statistic we can find four main distributions:
   
         > $\lambda$ **-->** $\mu$  = $\sigma^2$
 
-2. **Poisson distribution**
-3. **Negative Binomial distribution**
+### **1.3 Continous distribution**
+### **1.4 Negative Binomial distribution**
   
 
 
@@ -58,14 +57,19 @@ In statistic we can find four main distributions:
 # 3. Basic n-way ANOVA models
 # 4. Tables and types of contrasts
 # 5. Check the assumptions for the "good" model
-## 5.1. Normality (residuals)
-## 5.2. Heterocedasticity (residuals)
-## 5.3. Influent and lost points
-## 5.4. Variance homogeneity 
-## 5.5. Independence between predictor variables-factors - collinearity
+- ## 5.1. Normality (residuals)
+
+In statistics, normality tests are used to determine if a data set is well-modeled by a normal distribution and to compute how likely it is for a random variable underlying the data set to be normally distributed.
+
+- ## 5.2. Heterocedasticity (residuals)
+- ## 5.3. Influent and lost points
+- ## 5.4. Variance homogeneity 
+- ## 5.5. Independence between predictor variables-factors - collinearity
 
 
-# When use AIC or AICc)
+
+# 6. Other concepts to incorporate (In progress)
+## When use AIC or AICc)
 Acording Burnham & Anderson (2002) recommended not to use AIC without the bias correction unless 
 
 N/K < 40
@@ -73,12 +77,8 @@ N/K < 40
 K = total number of parameters of the likelihood
 N = sample size
 
-# Normality
-In statistics, normality tests are used to determine if a data set is well-modeled by a normal distribution and to compute how likely it is for a random variable underlying the data set to be normally distributed.
 
-# Heterocedasticity
-
-# post-hoc
+## post-hoc
 
 Post hoc analysis consists of statistical analyses that were specified after the data were seen. This typically creates a multiple testing problem because each potential analysis is effectively a statistical test. Multiple testing procedures are sometimes used to compensate, but that is often difficult or impossible to do precisely. Post hoc analysis that is conducted and interpreted without adequate consideration of this problem is sometimes called data dredging by critics because the statistical associations that it finds are often spurious.
 
