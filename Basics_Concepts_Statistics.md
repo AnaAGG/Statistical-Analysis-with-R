@@ -110,7 +110,7 @@ How we can explore the normality in our residuals?
 - Visually
   - Histogram
  <p align="center">
-  <img src="https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/normal_disrtibution.jpeg" />
+  <img src="https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/Histogram.png" />
   </p>
 
 
