@@ -111,7 +111,7 @@ How we can explore the normality in our residuals?
   - Histogram
   - Q-Q plot (normal probability plot)
   <p align="center">
-  <img src="[http://some_place.com/image.png](https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/QQPlot.png)" />
+  <img src="[https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/QQPlot.png]" />
   </p>
 
 ### **5.2 Heterocedasticity (residuals)**
