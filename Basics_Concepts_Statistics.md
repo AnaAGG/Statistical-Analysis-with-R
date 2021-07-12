@@ -24,8 +24,7 @@ In statistic we can find four main distributions:
    
     ![distribution](https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/normal_disrtibution.jpeg)
 
-    Is a type of continuous probability distribution for a 
-    Is defined by two statistics: 
+    Is a type of continuous probability distribution. Is defined by two statistics: 
 
       - Mean ($\mu$) =  0
 
@@ -40,8 +39,15 @@ In statistic we can find four main distributions:
 
     - In normal distribution:
   
-            mean = median = mode
+        > $\mu$  = median = mode
 1. **Continous distribution**
+   This distriburtion has the following characteristics:
+   - Created by integers (usually counts)
+   - It can not have negative values
+   - Its distribution is described by only one parameter, lambda ($\lambda$), so that the mean is equal to the variance of the distribution
+  
+        > $\lambda$ **-->** $\mu$  = $\sigma^2$
+
 2. **Poisson distribution**
 3. **Negative Binomial distribution**
   
