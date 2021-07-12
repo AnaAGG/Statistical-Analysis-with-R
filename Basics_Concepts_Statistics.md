@@ -1,5 +1,65 @@
-# When use AIC or AICc
+## Table of contents 
+- [1. Types of response variable distributions](#1-types-of-response-variable-distributions)
+- [2. Types of predictors](#2-types-of-predictors)
+- [3. Basic n-way ANOVA models](#3-basic-n-way-anova-models)
+- [4. Tables and types of contrasts](#4-tables-and-types-of-contrasts)
+- [5. Check the assumptions for the "good" model](#5-check-the-assumptions-for-the-good-model)
+  - [5.1. Normality (residuals)](#51-normality-residuals)
+  - [5.2. Heterocedasticity (residuals)](#52-heterocedasticity-residuals)
+  - [5.3. Influent and lost points](#53-influent-and-lost-points)
+  - [5.4. Variance homogeneity](#54-variance-homogeneity)
+  - [5.5. Independence between predictor variables-factors - collinearity](#55-independence-between-predictor-variables-factors---collinearity)
+- [When use AIC or AICc)](#when-use-aic-or-aicc)
+- [Normality](#normality)
+- [Heterocedasticity](#heterocedasticity)
+- [post-hoc](#post-hoc)
+- [dispersion](#dispersion)
 
+
+# 1. Types of response variable distributions
+
+In statistic we can find four main distributions: 
+
+1. **Gaussian or Normal distribution**
+   
+    ![distribution](https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/normal_disrtibution.jpeg)
+
+    Is a type of continuous probability distribution for a 
+    Is defined by two statistics: 
+
+      - Mean ($\mu$) =  0
+
+      - Standard deviation ($\sigma$) = 1. It is a measure how spread out our date are. 
+  
+    The parameter $\mu$  is the mean of the distribution, while the parameter $\sigma$  is its standard deviation. The variance of the distribution is $\sigma^2$. A random variable with a Gaussian distribution is said to be normally distributed, and is called a normal deviate.
+  
+    Key points:
+    - A normal distribution is the proper term for a probability bell curve.
+
+    - Normal distributions are symmetrical, but not all symmetrical distributions are normal.
+
+    - In normal distribution:
+  
+            mean = median = mode
+1. **Continous distribution**
+2. **Poisson distribution**
+3. **Negative Binomial distribution**
+  
+
+
+
+# 2. Types of predictors 
+# 3. Basic n-way ANOVA models
+# 4. Tables and types of contrasts
+# 5. Check the assumptions for the "good" model
+## 5.1. Normality (residuals)
+## 5.2. Heterocedasticity (residuals)
+## 5.3. Influent and lost points
+## 5.4. Variance homogeneity 
+## 5.5. Independence between predictor variables-factors - collinearity
+
+
+# When use AIC or AICc)
 Acording Burnham & Anderson (2002) recommended not to use AIC without the bias correction unless 
 
 N/K < 40
