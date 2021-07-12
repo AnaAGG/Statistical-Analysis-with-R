@@ -77,7 +77,7 @@ $$
 
 When size is very large `1/size` tend to 0 and the variance ends up looking by $\mu$
 
-Depending on the nature of our response variable, we will owrk with different types of models: 
+Depending on the nature of our response variable, we will work with different types of models: 
 |Linear General Models|Linear Generalised Linear Models|
 |:-------:|:-------:|
 |Gaussian Distribution|Poisson Distribution|
@@ -107,18 +107,38 @@ The residuals of the model should fit a normal distribution. Should look somethi
 METER UNA FOTO DE LA DISTRIBUCION NORMLA
 
 How we can explore the normality in our residuals?
-- Visually
-  - Histogram
- <p align="center">
+- Visually:
+  - **Histogram**
+
+  <p align="center">
   <img src="https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/Histogram.png" />
   </p>
 
-
-  - Q-Q plot (normal probability plot)
+  - **Q-Q plot (normal probability plot)**
   <p align="center">
   <img src="https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/QQPlot.png" />
   </p>
+- Analytically / Statistically:
+  
+  - **Test the Shapiro-Wilk**
+  
+    The null hypothesis of this test is that the population is normally distributed. Thus: 
+    - If p-value  < 0.05 ==> Data **NOT NORMALLY** distributed
+    - If p-value  > 0.05 ==> Data **NORMALLY** distributed
+  
+    More info about Shapiro test [here](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test)
+  
+  - **Kurtosis (K)**
+  
+    Kurtosis tell us the height and sharpness of the central peak, relative to that of a standard bell curve. 
 
+    If K > 0 (leptokurtosis) ==> greater type II error, accept null hypothesis when is false
+    <p align="center">
+    <img src="https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/kurtosis.png" />
+    </p>
+
+    
+  - **Skew**
 ### **5.2 Heterocedasticity (residuals)**
 ### **5.3. Influent and lost points**
 ### **5.4. Variance homogeneity**
