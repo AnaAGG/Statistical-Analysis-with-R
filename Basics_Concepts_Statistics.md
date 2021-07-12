@@ -8,10 +8,15 @@
 - [3. Basic n-way ANOVA models](#3-basic-n-way-anova-models)
 - [4. Tables and types of contrasts](#4-tables-and-types-of-contrasts)
 - [5. Check the assumptions for the "good" model](#5-check-the-assumptions-for-the-good-model)
+    - [**5.1 Normality (residuals)**](#51-normality-residuals)
+    - [**5.2 Heterocedasticity (residuals)**](#52-heterocedasticity-residuals)
+    - [**5.3. Influent and lost points**](#53-influent-and-lost-points)
+    - [**5.4. Variance homogeneity**](#54-variance-homogeneity)
+    - [**5.5. Independence between predictor variables-factors - collinearity**](#55-independence-between-predictor-variables-factors---collinearity)
 - [6. Other concepts to incorporate (In progress)](#6-other-concepts-to-incorporate-in-progress)
+  - [dispersion](#dispersion)
   - [When use AIC or AICc)](#when-use-aic-or-aicc)
   - [post-hoc](#post-hoc)
-- [dispersion](#dispersion)
 
 
 # **1. Types of response variable distributions**
@@ -47,28 +52,54 @@ Key points:
   
         > $\lambda$ **-->** $\mu$  = $\sigma^2$
 
+⚠️ Poisson distributions with high $\lambda$ (i.e. far from zero) can resemble a Gaussian
+
 ### **1.3 Continous distribution**
 ### **1.4 Negative Binomial distribution**
+
+More spread out distributions than a Poisson (variance > mean). Their characteristics are:
+- Distribution of integers (usually counts)
+- It can not have negative values
+- Are described by two parameters:
+  - Mean ($\mu$)
+  - Inflated variance (called `size` in R)
+
+The variance is defines by: 
+
+$\mu$ + $\mu^2 / size$
+
+<!-- $$
+P(\overline{A} \cap \overline{B}) = 0.3
+$$ --> 
+
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=P(%5Coverline%7BA%7D%20%5Ccap%20%5Coverline%7BB%7D)%20%3D%200.3"></div>
+
+
+$$
+P(\mu \cap \overline{B}) = 0.3
+$$
+
+
+
+When size is very large `1/size` tend to 0 and the variance ends up looking by $\mu$
   
-
-
+  
 
 # 2. Types of predictors 
 # 3. Basic n-way ANOVA models
 # 4. Tables and types of contrasts
 # 5. Check the assumptions for the "good" model
-- ## 5.1. Normality (residuals)
-
+### **5.1 Normality (residuals)**
 In statistics, normality tests are used to determine if a data set is well-modeled by a normal distribution and to compute how likely it is for a random variable underlying the data set to be normally distributed.
-
-- ## 5.2. Heterocedasticity (residuals)
-- ## 5.3. Influent and lost points
-- ## 5.4. Variance homogeneity 
-- ## 5.5. Independence between predictor variables-factors - collinearity
+### **5.2 Heterocedasticity (residuals)**
+### **5.3. Influent and lost points**
+### **5.4. Variance homogeneity**
+### **5.5. Independence between predictor variables-factors - collinearity**
 
 
 
 # 6. Other concepts to incorporate (In progress)
+## dispersion
 ## When use AIC or AICc)
 Acording Burnham & Anderson (2002) recommended not to use AIC without the bias correction unless 
 
@@ -82,9 +113,4 @@ N = sample size
 
 Post hoc analysis consists of statistical analyses that were specified after the data were seen. This typically creates a multiple testing problem because each potential analysis is effectively a statistical test. Multiple testing procedures are sometimes used to compensate, but that is often difficult or impossible to do precisely. Post hoc analysis that is conducted and interpreted without adequate consideration of this problem is sometimes called data dredging by critics because the statistical associations that it finds are often spurious.
 
-
-# dispersion
-
-- **Overdispersion** describes the observation that variation is higher than would be expected.
-[More_docu](http://biometry.github.io/APES//LectureNotes/2016-JAGS/Overdispersion/OverdispersionJAGS.html)
 
