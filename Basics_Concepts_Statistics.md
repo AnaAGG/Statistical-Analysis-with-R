@@ -14,7 +14,7 @@
 - [4. Tables and types of contrasts](#4-tables-and-types-of-contrasts)
 - [5. Check the assumptions for the "good" model](#5-check-the-assumptions-for-the-good-model)
     - [**5.1 Normality (residuals)**](#51-normality-residuals)
-    - [**5.2 Heterocedasticity (residuals)**](#52-heterocedasticity-residuals)
+    - [**5.2 Homocedasticity (residuals)**](#52-homocedasticity-residuals)
     - [**5.3. Influent and lost points**](#53-influent-and-lost-points)
     - [**5.4. Variance homogeneity**](#54-variance-homogeneity)
     - [**5.5. Independence between predictor variables-factors - collinearity**](#55-independence-between-predictor-variables-factors---collinearity)
@@ -122,7 +122,7 @@ How we can explore the normality in our residuals?
   
   - **Test the Shapiro-Wilk**
   
-    The null hypothesis of this test is that the population is normally distributed. Thus: 
+    The `null hypothesis` of this test is that the population is normally distributed. Thus: 
     - If p-value  < 0.05 ==> Data **NOT NORMALLY** distributed
     - If p-value  > 0.05 ==> Data **NORMALLY** distributed
   
@@ -130,16 +130,17 @@ How we can explore the normality in our residuals?
   
   - **Kurtosis (K)**
   
-    Kurtosis tell us the height and sharpness of the central peak, relative to that of a standard bell curve. 
+    Kurtosis tell us the height and sharpness of the central peak, relative to that of a standard bell curve.  The `null hypothesis` of this test is that the population is normally distributed.
 
-    If K > 0 (leptokurtosis) ==> greater type II error, accept null hypothesis when is false
-    <p align="center">
-    <img src="https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/kurtosis.png" />
-    </p>
+    - If K > 0 (leptokurtosis) ==> greater type II error, accept null hypothesis when is false
+      <p align="center">
+      <img src="https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/kurtosis.png" />
+      </p>
+    -  If K < 0 (platikurtosis) ==> greated type I error, 
 
     
   - **Skew**
-### **5.2 Heterocedasticity (residuals)**
+### **5.2 Homocedasticity (residuals)**
 ### **5.3. Influent and lost points**
 ### **5.4. Variance homogeneity**
 ### **5.5. Independence between predictor variables-factors - collinearity**
