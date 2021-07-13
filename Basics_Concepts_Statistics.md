@@ -133,14 +133,23 @@ How we can explore the normality in our residuals?
     Kurtosis tell us the height and sharpness of the central peak, relative to that of a standard bell curve.  The `null hypothesis` of this test is that the population is normally distributed.
 
     - If K > 0 (leptokurtosis) ==> greater type II error, accept null hypothesis when is false
+    - If K < 0 (platikurtosis) ==> greated type I error, 
       <p align="center">
       <img src="https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/kurtosis.png" />
       </p>
-    -  If K < 0 (platikurtosis) ==> greated type I error, 
+    
 
     
   - **Skew**
 ### **5.2 Homocedasticity (residuals)**
+- The variance of the residuals should be similar across model predictions.
+  
+- A random scatter pattern of points should appear, without drawing any geometric pattern (e.g., like many randomly distributed balls on a billard table) 
+ <p align="center">
+      <img src="https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/homocedasticity.png" />
+      </p>
+⚠️ SITUATION WE SHOULD NOT HAVE ⚠️ violation of the homoscedasticity assumption as tehre is a triangular pattern indicating that tehre is heterogeneity in the variance of the residuals across the model predictions. There is greater variance at higer preficted values. 
+
 ### **5.3. Influent and lost points**
 ### **5.4. Variance homogeneity**
 ### **5.5. Independence between predictor variables-factors - collinearity**
