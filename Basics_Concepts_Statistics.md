@@ -18,10 +18,6 @@
     - [**5.3. Influent and lost points**](#53-influent-and-lost-points)
     - [**5.4. Variance homogeneity**](#54-variance-homogeneity)
     - [**5.5. Independence between predictor variables-factors - collinearity**](#55-independence-between-predictor-variables-factors---collinearity)
-- [6. Other concepts to incorporate (In progress)](#6-other-concepts-to-incorporate-in-progress)
-  - [dispersion](#dispersion)
-  - [When use AIC or AICc)](#when-use-aic-or-aicc)
-  - [post-hoc](#post-hoc)
 
 
 # **1. Types of response variable distributions**
@@ -148,27 +144,32 @@ How we can explore the normality in our residuals?
  <p align="center">
       <img src="https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Images/homocedasticity.png" />
       </p>
-⚠️ SITUATION WE SHOULD NOT HAVE ⚠️ violation of the homoscedasticity assumption as tehre is a triangular pattern indicating that tehre is heterogeneity in the variance of the residuals across the model predictions. There is greater variance at higer preficted values. 
+⚠️ SITUATION WE SHOULD NOT HAVE ⚠️ violation of the homoscedasticity assumption as there is a triangular pattern indicating that tehre is heterogeneity in the variance of the residuals across the model predictions. There is greater variance at higer preficted values. 
 
 ### **5.3. Influent and lost points**
 ### **5.4. Variance homogeneity**
+
 ### **5.5. Independence between predictor variables-factors - collinearity**
 
+The predictor variables were for a long time called `independent`. This was an explicit recognition that they shoud be uncorrelated with each other. 
+
+If there is dependence between the predictor variables, we have **COLLINEARITY**
+
+The collinearity could be the result of:
+- By definition the predictor variables are correlated ( e.g. altitude and temperature)
+  
+- Because there is not homogeneity in the sample size along the different factors levels. 
+
+The problems that we can find when the variables are correlated:
+- Variables cancel each other out
+- significance estimates are altered 
+- Effect sizes are altered 
+- No convergence between type I and type II sum of squares (SS) results. 
+
+Exploring collinearity between predictor variables: 
 
 
-# 6. Other concepts to incorporate (In progress)
-## dispersion
-## When use AIC or AICc)
-Acording Burnham & Anderson (2002) recommended not to use AIC without the bias correction unless 
+    AFTER ALL THESE EXPLORATION OF THE CANONICAL ASSUMPTIONS OF THE MODELS...
 
-N/K < 40
-
-K = total number of parameters of the likelihood
-N = sample size
-
-
-## post-hoc
-
-Post hoc analysis consists of statistical analyses that were specified after the data were seen. This typically creates a multiple testing problem because each potential analysis is effectively a statistical test. Multiple testing procedures are sometimes used to compensate, but that is often difficult or impossible to do precisely. Post hoc analysis that is conducted and interpreted without adequate consideration of this problem is sometimes called data dredging by critics because the statistical associations that it finds are often spurious.
-
+    ⚠️ WE CAN NOW PROCEED TO ASSESS THEIR RESULTS ⚠️
 
