@@ -172,3 +172,4 @@ Exploring collinearity between predictor variables:
 
     WE CAN NOW PROCEED TO ASSESS THEIR RESULTS
 
+How to interpret the model results [here](https://github.com/AnaAGG/Statistical-Analysis-with-R/blob/main/Assess_results.md)
