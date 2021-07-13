@@ -168,8 +168,7 @@ The problems that we can find when the variables are correlated:
 
 Exploring collinearity between predictor variables: 
 
-
     AFTER ALL THESE EXPLORATION OF THE CANONICAL ASSUMPTIONS OF THE MODELS...
 
-    ⚠️ WE CAN NOW PROCEED TO ASSESS THEIR RESULTS ⚠️
+    WE CAN NOW PROCEED TO ASSESS THEIR RESULTS
 
